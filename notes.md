@@ -79,4 +79,15 @@ this.state.name = 'Tim';
   * `match`
   * `location` Represents where the app is, was or will be
   * `history`
-* 
+
+###Redux
+* Single source of truth - object tree in a single store
+* State is read-only - can only be changed by dispatching an action
+* Changes are made with pure functions called reducers
+* [Redux Flow](https://medium.com/the-web-tub/managing-your-react-state-with-redux-affab72de4b1)
+* Async Actions - important events when you call an async action. Used for REST calls.
+* `react-thunk`
+* Redux Devtools!!!
+* Presentation vs. Container components - see slide 7/11
+* You can have an initial state to start
+
