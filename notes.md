@@ -44,4 +44,39 @@ Foo.propTypes: {
 
 ###Dom Query methods
 * `find()` - find all nodes that match the selector
+
+###React and Local State
+* `state` anything changeable. Used for behavior
+* Best practice to use arrow function so you don't have to bind in the constructor.
+* Use setState(), don't update directly. See examples
+
+> Good
+```javascript
+this.setState({
+  name: 'Tim'
+});
+```
+> Bad
+```javascript
+this.state.name = 'Tim';
+```
+
+* Asynchronous state updates...see slides 4.8
+ 
+
+###Routing
+* Github react-router
+* Community created and controlled. Defacto mechanism
+* `BrowserRouter`: uses HTML5 history API
+* `Route` - core path routing component
+* `path` - pattern used to match this route against url
+* `component` The React component to be rendered
+* `exact & strict` See slides
+* `Redirect` Navigates to a new location. Good for transitioning
+* `Switch` Renders the first chile Route/Redirect that matches. Renders only the first one
+* `Link` Declarative navigation. Renders an `a` tag. Specialized version `navLink`.
+* `Route Props` match, location, history
+  * `match`
+  * `location` Represents where the app is, was or will be
+  * `history`
 * 
