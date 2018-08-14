@@ -91,3 +91,19 @@ this.state.name = 'Tim';
 * Presentation vs. Container components - see slide 7/11
 * You can have an initial state to start
 
+###Forms
+* Form components allow listening for changes
+* `onchange` callback is common
+* Autosize library?
+* Formik library for logic and validation. React Final Form - similar to Formik. Both are good for production.
+
+###Special Topics - React 16.3
+* `React.Fragment` - no need for wrapping element
+* `React.createContext` - share a value to any component in hierarchy. Theme is common use case. Does not kill redux.
+* `React,createRef` - Replaces `ref` deprecated API. More for legacy apps.
+* `ReactDOM.createPortal(child, container)` - Can be used for tooltips. Outside of page flow.
+* Static Type Checking
+  * Flow - supported better than TypeScript in React ecosystem. create-react-app supports out of the box
+  * TypeScript. react-script-ts.
+* CSS in JS. See CSS Modules. create-react-app 2 is supposed to support this. See slide for example site.
+* 

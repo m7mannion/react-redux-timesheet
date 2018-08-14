@@ -32,6 +32,15 @@ class App extends Component {
             {/* TODO - Add the timesheets detail and create routes */}
 
             {/* TODO - Add the timeunits detail and create routes*/}
+            <Route path='/employees/detail/:_id' component={EmployeesDetail} />
+            <Route path='/employees/create' component={EmployeesCreate} />
+
+            <Route exact path='/employees/:user_id/timesheets/detail/:_id' component={TimesheetsDetail} />
+
+            <Route path='/employees/:user_id/timesheets/detail/:timesheet_id/timeunits/create' component={TimeunitsCreate} />
+            <Route path='/employees/:user_id/timesheets/detail/:timesheet_id/timeunits/detail/:_id' component={TimeunitsDetail} />
+
+            <Route path='/timesheets/create' component={TimesheetsCreate} />
 
             <Redirect to="/employees" />
           </Switch>
